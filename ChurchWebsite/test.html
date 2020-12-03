@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <h1> Hi! My name is patrick and welcome</h1>
+    </head>
+    <script src= "./dragevent.js"></script>
+    <body>
+        <p align ="center">This a ball <br /><hr width = "80px" align = "right"/> </p>
+        <a href = "__blank" id = "date">
+        
+        </a>
+        <div id ="box" ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: blue; 
+            border:1px solid black; text-align: center; color:white; width:200px; height:200px;" >
+            <p> This my style and place</p>
+            <!--We can use the progress tag in conjuction with javascript to dispaly a progress completion bar of a task-->
+            <p>Completion: <progress min = "0" max = "100" value = "50"></progress></p>
+        </div>
+
+        <img  id = "image" src = "image1.jpg" draggable = "true" ondragstart= "drag(event)" width= "150px" height="100px"  alt= ""/>
+
+        <svg width= "200" height= "100"><rect width= "160" height = "100" fill="yellow"><animate attributeName= "x"
+            from = "6" to="100" dur= "5s" repeatCount="7"/>
+        </rect> </svg>
+
+        <svg width = "400" height = "400"><path d = "M 200 0 L400 200 H -400   L0 200 Z" style="stroke: #000; fill:red"/></svg>
+
+    </body>
+</html>
